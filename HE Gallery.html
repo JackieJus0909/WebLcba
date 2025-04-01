@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+ background-color: blue;
+}
+
+/* Header/Blog Title */
+.header {
+
+  background-image:url("blue.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  width: 100%;
+  height: 210px;
+  padding: 30px;
+  
+  
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+
+  font-size:20px;
+  
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: blue;
+  color: yellow;
+}
+
+
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 50%;   
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 50%;
+  padding-left: 20px;
+}
+
+
+.image1 {
+  
+  background-image:url("LCBA3.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  height: 550px;
+  padding: 100px;
+
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+.cookery1 {
+  
+  background-image:url("Cookery1.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  height:500px;
+  padding: 100px;
+
+ 
+}
+
+.fandb1 {
+  
+  background-image:url("FandB2.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  height: 500px;
+  padding: 100px;
+  
+}
+
+
+.fandb2 {
+  
+  background-image:url("FandB2.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  height: 500px;
+  padding: 100px;
+  
+}
+.fandb3 {
+  
+  background-image:url("FandB3.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  height: 500px;
+  padding: 100px;
+  
+}
+
+
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+
+  background-image:url("blue.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+
+}
+
+
+.card p {
+  font-size: 22px;
+  color:white;
+  font-family:"Times New Roman",Times,serif;
+  text-align:justify;
+}
+
+.card h2 {
+  font-size: 26px;
+  color:white;
+  font-family:"Times New Roman",Times,serif;
+  
+  
+}
+
+.card h3 {
+  font-size: 26px;
+  color:white;
+  font-family:"Times New Roman",Times,serif;
+  
+  
+}
+
+
+
+
+.card h5 {
+  font-size: 20px;
+  color:white;
+  font-family:"Times New Roman",Times,serif;
+  
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 22px;
+  background: #ddd;
+  margin-top: 20px;
+
+  background-image:url("blue.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+
+  font-size: 14px;
+  color:white;
+  font-family:"Times New Roman",Times,serif;
+
+
+  column-count: 3;
+  column-gap: 40px;
+  column-rule-style: solid;
+  column-rule-width: 1px;
+  column-rule-color: lightblue; 
+}
+
+.footer a {
+color:white;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn{   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+.bxl-facebook-circle
+{
+  font-size: 100px;
+  
+}
+
+.videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers everything inside */
+    justify-content: center;
+    text-align: center;
+    min-height: 80vh; 
+    padding: 50px 0;
+    
+
+ 
+}
+.video-header {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000c85; /* Matches your theme */
+    width: 100%;
+}
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Spacing between videos */
+    width: 100%;
+    max-width: 1600px;
+    justify-content: center;
+}
+
+video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+
+
+<body>
+
+<div class="header">
+<center>
+<img src = "LCBA1.png" height = 160px width = 250px>   
+<center>
+</div>
+
+
+<div class="topnav">
+ <a href="file:///C:/Users/Jack%20Salas/Desktop/WEB%20DEV%202.2/Index.html">LCBA</a>
+  <a href="file:///C:/Users/Jack%20Salas/Desktop/WEB%20DEV%202.2/TVL%20Strand.html">TVL Strand</a>
+  <a href = "file:///C:/Users/Jack%20Salas/Desktop/WEB%20DEV%202.2/TVL%20ICT.html">TVL ICT </a>
+   <a href="file:///C:/Users/Jack%20Salas/Desktop/WEB%20DEV%202.2/TVL%20HE.html">TVL HE</a>
+  <a href="file:///C:/Users/Jack%20Salas/Desktop/WEB%20DEV%202.2/HE Gallery.html" style="float:right">TVL HE Gallery</a>
+<a href="file:///C:/Users/Jack%20Salas/Desktop/WEB%20DEV%202.2/HE Gallery.html" style="float:right">TVL ICT Gallery</a>
+
+    
+  </div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+
+    <div class="card">
+
+      <h3>Home Economics Pictures</h3> <br>
+
+       <h3>Cookery</h3> 
+
+      <div class="cookery1"><p></p></div> <br>
+      <div class="cookery1"><p></p></div> <br>
+      <div class="cookery1"><p></p></div>  
+
+       <h3>Food and Beverages Services </h3> 
+
+      <div class="cookery1"><p></p></div> <br>
+      <div class="cookery1"><p></p></div> <br>
+      <div class="cookery1"><p></p></div>   
+ 
+     <h3>Baking </h3> 
+
+      <div class="cookery1"><p></p></div> <br>
+      <div class="cookery1"><p></p></div> <br>
+      <div class="cookery1"><p></p></div>   
+ 
+
+ 
+     </div>
+
+      
+    
+  </div>
+
+
+  <div class="rightcolumn">
+
+    <div class="card">
+        <h3>Home Economics Videos</h3> <br>
+       <h3></h3> 
+
+       <section class="videos">
+            <div style="width: 100%; text-align: center;">
+                <h2 class="video-header">  </h2>
+            </div>
+            <div class="video-container">
+
+                <div class="video-item">
+                    <video controls>
+                        <source src="ICT.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="video-description">HE Promotional Animation Video by TVL ICT 11 Inventiveness</p>
+                </div>
+
+             <div class="video-item">
+                    <video controls>
+                        <source src="HE Marketing Video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="video-description">HE Marketing Video by TVL ICT 12 Systematize</p>
+                </div>
+
+
+            <div class="video-item">
+                    <video controls>
+                        <source src="ICT.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="video-description">HE Cookery Animation Video by ICT 11 Inventiveness</p>
+                </div>
+
+
+        <div class="video-item">
+                    <video controls>
+                        <source src="ICT.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="video-description">HE Food and Beverages Animation Video by ICT 11 Inventiveness</p>
+                </div>
+
+      <div class="video-item">
+                    <video controls>
+                        <source src="ICT.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="video-description">HE Baking Animation Video by ICT 11 Inventiveness </p>
+                </div>
+
+
+            </div>
+        </section>
+
+       
+
+
+    </div>
+
+
+  </div>
+
+
+</div>
+
+<div class="footer">
+ <center> <a href = "https://www.facebook.com/LCBAofficial"> <i class='bx bxl-facebook-circle'></i> </a>     </center>
+
+<br> <br>
+
+ <center> <a href = "https://www.lcba.edu.ph/pmv"> <img src = "web.png" height = 100px width = 100px> </i> </a>  </a>     </center>
+
+<br> <br> 
+  <center> <a href = "file:///C:/Users/Jack%20Salas/Desktop/WEB%20DEV%202.2/Address.html"> <img src = "addbook.png" height = 100px width = 100px> </i> </a>     </center>
+
+
+
+</div>
+
+</body>
+</html>
+
+
